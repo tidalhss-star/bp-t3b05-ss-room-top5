@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>상수 룸싸롱 TOP5 정보 – 가격, 위치, 예약 꿀팁</title>
+<meta name="description" content="상수 룸싸롱 TOP5 정보 총정리. 각 업소의 정확한 가격대, 위치, 서비스 수준, 예약 방법까지 까발린다. 상수 룸싸롱 가기 전에 필독.">
+<meta name="keywords" content="상수 룸싸롱 정보, 상수 룸싸롱 가격, 상수 룸싸롱 위치, 상수 룸싸롱 예약, 상수 룸싸롱 TOP5 상세">
+<meta name="bpaas-design-system" content="brutalist-avantgarde">
+<meta name="bpaas-design-theme" content="kr-raw-concrete">
+<link rel="canonical" href="https://t3b05-ss-room-top5.vercel.app/info">
+<meta property="og:title" content="상수 룸싸롱 TOP5 – 정보 총정리">
+<meta property="og:description" content="진짜 쓸모있는 정보만 모았다. 가격, 위치, 서비스, 분위기. 상수 룸싸롱 TOP5의 모든 것.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<style>
+/* RESET */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background-color: #f5f0eb;
+    color: #1a1a1a;
+    line-height: 1.6;
+    word-break: keep-all;
+}
+
+/* STREET BRUTALIST DNA */
+h1, h2, h3, h4, .brutal-heading {
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+}
+
+h1 { font-size: clamp(2.2rem, 8vw, 4rem); margin-bottom: 0.5rem; }
+h2 { font-size: clamp(1.6rem, 5vw, 2.8rem); margin-bottom: 1rem; }
+h3 { font-size: clamp(1.2rem, 3vw, 1.8rem); margin-bottom: 0.75rem; }
+h4 { font-size: 1.1rem; margin-bottom: 0.5rem; }
+
+.accent-text { color: #d42e2e; }
+.bg-accent { background-color: #d42e2e; color: #fff; padding: 0.1em 0.3em; display: inline-block; }
+
+a { color: #1a1a1a; text-decoration: underline; text-underline-offset: 3px; transition: color 0.2s; }
+a:hover { color: #d42e2e; }
+
+img, svg { max-width: 100%; height: auto; display: block; }
+
+/* LAYOUT FULL BLEED + BALANCED SPACE */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+section {
+    padding: 4rem 0;
+    border-bottom: 4px solid #1a1a1a;
+}
+
+section:last-of-type { border-bottom: none; }
+
+.no-border { border: none !important; }
+
+/* HEADER */
+header {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-weight: 900;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    color: #fff;
+}
+
+header .logo:hover { color: #d42e2e; }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: color 0.2s;
+}
+
+nav a:hover { color: #fff; }
+nav a.active { color: #d42e2e; }
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.25rem;
+}
+
+.tel-link {
+    display: inline-block;
+    background: #d42e2e;
+    color: #fff;
+    padding: 0.4rem 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 0;
+    transition: background 0.2s;
+}
+
+.tel-link:hover { background: #b82222; color: #fff; }
+
+/* HERO */
+.hero {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 5rem 0 4rem;
+    text-align: center;
+}
+
+.hero .brutal-heading {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.85;
+    line-height: 1.7;
+}
+
+/* CARDS */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background: #fff;
+    border: 4px solid #1a1a1a;
+    padding: 2rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 8px 8px 0 #1a1a1a;
+}
+
+.card h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+
+.card .price-tag {
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    padding: 0.2rem 0.8rem;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 0.8rem;
+}
+
+.card p { font-size: 0.95rem; margin-bottom: 0.3rem; }
+.card .detail-row { margin-top: 1rem; padding-top: 1rem; border-top: 2px solid #eee; font-size: 0.9rem; }
+
+/* TABLE */
+.info-table-wrap {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px solid #1a1a1a;
+    font-size: 0.95rem;
+}
+
+.info-table th, .info-table td {
+    padding: 1rem 1.2rem;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+.info-table th {
+    background: #1a1a1a;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.info-table tr:last-child td { border-bottom: none; }
+.info-table tr:hover td { background: #f0ebe6; }
+
+/* FAQ */
+.faq-list {
+    margin-top: 2rem;
+}
+
+.faq-item {
+    border: 2px solid #1a1a1a;
+    margin-bottom: 1rem;
+    background: #fff;
+}
+
+.faq-q {
+    padding: 1.2rem 1.5rem;
+    cursor: pointer;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f0eb;
+    transition: background 0.2s;
+}
+
+.faq-q:hover { background: #e8e1d9; }
+
+.faq-q .toggle {
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.faq-a {
+    padding: 0 1.5rem 1.2rem;
+    display: none;
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.faq-item.open .faq-a { display: block; }
+.faq-item.open .toggle { transform: rotate(45deg); }
+
+/* FOOTER */
+footer {
+    background: #1a1a1a;
+    color: #ccc;
+    padding: 3rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+footer a { color: #ccc; }
+footer a:hover { color: #d42e2e; }
+
+footer .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .wrapper { padding: 0 1rem; }
+    section { padding: 3rem 0; }
+
+    header .wrapper {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+        margin-top: 1rem;
+        order: 3;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .tel-link {
+        margin-top: 0.5rem;
+        display: inline-block;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-table th, .info-table td {
+        padding: 0.8rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+    .hero { padding: 3rem 0 2.5rem; }
+    .card { padding: 1.5rem; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="wrapper">
+        <a href="/" class="logo">상수룸싸롱.TOP5</a>
+        <button class="hamburger" id="hamburger" aria-label="메뉴 열기">☰</button>
+        <nav id="nav">
+            <ul>
+                <li><a href="/">홈</a></li>
+                <li><a href="/top5">TOP5</a></li>
+                <li><a href="/info" class="active">정보</a></li>
+                <li><a href="/reviews">후기</a></li>
+                <li><a href="/faq">FAQ</a></li>
+            </ul>
+        </nav>
+        <a href="tel:010-1234-5678" class="tel-link">전화예약</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="wrapper">
+        <h1 class="brutal-heading">정보<span class="accent-text">.</span></h1>
+        <p>상수 룸싸롱 TOP5 – 있는 그대로 까발린다. 가성비, 분위기, 서비스, 가격까지. 찐으로 쓸모있는 정보만 쏜다.</p>
+    </div>
+</section>
+
+<section>
+    <div class="wrapper">
+        <h2 class="brutal-heading">가격 <span class="accent-text">비교표</span></h2>
+        <p class="no-border" style="margin-bottom:0.5rem;">업소별 1인 평균 비용, 기본 시스템, 추가 비용 항목. 돈 아깝지 않은 곳만 골랐다.</p>
+        <div class="info-table-wrap">
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>업소명</th>
+                        <th>1인 평균</th>
+                        <th>기본 시간</th>
+                        <th>추가 30분</th>
+                        <th>병 최저</th>
+                        <th>특이사항</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>더블랙</strong></td>
+                        <td>25~35만원</td>
+                        <td>2시간</td>
+                        <td>10만원</td>
+                        <td>양주 8만원~</td>
+                        <td>신규 오픈, 호스트 15명 상주</td>
+                    </tr>
+                    <tr>
+                        <td><strong>에이스</strong></td>
+                        <td>30~40만원</td>
+                        <td>2시간</td>
+                        <td>12만원</td>
+                        <td>양주 10만원~</td>
+                        <td>VIP룸 별도, 5인이상 할인</td>
+                    </tr>
+                    <tr>
+                        <td><strong>루이</strong></td>
+                        <td>28~38만원</td>
+                        <td>2시간</td>
+                        <td>10만원</td>
+                        <td>양주 9만원~</td>
+                        <td>일본식 서비스, 마담 상주</td>
+                    </tr>
+                    <tr>
+                        <td><strong>클럽M</strong></td>
+                        <td>22~30만원</td>
+                        <td>2시간</td>
+                        <td>8만원</td>
+                        <td>양주 7만원~</td>
+                        <td>가성비 1위, 2030 인기</td>
+                    </tr>
+                    <tr>
+                        <td><strong>더테라스</strong></td>
+                        <td>35~50만원</td>
+                        <td>2시간</td>
+                        <td>15만원</td>
+                        <td>양주 12만원~</td>
+                        <td>루프탑 뷰, 최대 8인</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="margin-top:1rem; font-size:0.9rem;">※ 가격은 시즌/요일/인원에 따라 변동될 수 있음. 예약 시 반드시 확인할 것.</p>
+    </div>
+</section>
+
+<section>
+    <div class="wrapper">
+        <h2 class="brutal-heading">위치 &amp; <span class="accent-text">접근성</span></h2>
+        <p>상수역 중심 도보 3~7분 거리. 주차 어렵다 – 대중교통 강력 추천. 각 업소별 정확한 위치와 주차 가능 여부
+</body>
+</html>
